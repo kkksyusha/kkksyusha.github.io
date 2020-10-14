@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title> THIS PAGE ONLY FOR EXERCISES  </title>
+	</head>
+<body>
+<ul>    <a href="https://kkksyusha.github.io/">Home</a>
+
+<ol>
+	<li>Skills</li>
+	<li>Contacts</li>
+	<li>Education&Work Experience</li>
+	<li>Coming soon...</li>
+</ol>
+<ul>
+	<li>Please carefully check the information</li>
+	<li>Go to the page contacts</li>
+	<li>If you have any questions, please contact me</li>
+</ul>
+
+<dl>
+	<dd>In case you have questions</dd>
+	<dt>>Go to the page contacts, please find any way is convinient for you, contact me</dt>
+	<dd><b>Avaliable time</b></dd>
+	<dt>Monday-Friday, 5-8 pm</dt>
+</dl>
+
+</ul>
+</body>
+</html>
