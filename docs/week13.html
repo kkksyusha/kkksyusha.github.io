@@ -1,0 +1,207 @@
+
+<html>
+  <head>
+    <style>
+      ul.a {list-style-type: square;}
+      
+      ul.b {list-style: none;
+            padding: 0;
+            margin: 0;}     
+      li.b::before {content: "•";
+                    padding-right: 8px;
+                    color: yellow;}
+      
+      ul.c {list-style-image: url('marker.png');}
+      
+      ul.d:hover{background-color: yellow;}
+      
+      table.e {border-collapse: collapse;}
+      table.e, th.e, td.e { border: 1px solid black;}
+      
+      table.f { border-collapse: collapse; }
+      tr.f { border: none; }
+      td.f { border-right: solid 1px #f00; 
+             border-left: solid 1px #f00;}
+      
+      table.g, td.g, th.g { border: 1px solid #ddd;
+                      text-align: left;}
+      table.g { border-collapse: collapse;
+             width: 90%;
+             margin:auto;}
+      th.g, td.g { padding: 15px;}
+ 
+      table.h {border-collapse: collapse;
+             width: 100%;}
+      th.h, td.h {text-align: left;
+              padding: 8px;}
+      tr.h:nth-child(even){background-color: lightgrey}
+      th.h {background-color: #4CAF50;
+           color: white;}
+      
+      table.i { border-collapse: collapse;
+              width: 100%;}
+      th.i, td.i { text-align: left;
+               padding: 8px;}
+      tr.i:nth-child(odd) {background-color: lightgreen;}
+      tr.i:nth-child(even) {background-color: green;}
+ 
+      table.j {border-collapse: collapse;
+               width: 70%;
+               margin:auto;}
+      th.j, td.j {padding: 8px;
+                  text-align: left;
+                  border-bottom: 1px solid #ddd;}
+      tr.j:hover {background-color:yellow;}
+      
+      table.k {empty-cells: hide;}
+    </style>
+  </head>
+  
+  <body>
+    <h1>Exercise 1. change list style</h1>
+    <ul class="a">
+      <li>Japanese Shiba Inu</li>
+      <li>Japanese Small Size Dog</li>
+      <li>Japanese Brushwood Dog</li>
+    </ul>
+    
+    <hr/>
+    
+    <h1>Exercise2. use a custom bullet for list items</h1>
+    <ul class="b">
+      <li class="b">Japanese Turf Dog</li>
+      <li class="b">Shiba Inu</li>
+      <li class="b">Shiba Ken</li>
+    </ul>
+  
+    <hr/>
+    
+    <h1>Exercise3. use an image as a bullet for list items</h1>
+    <ul class="c">
+      <li>柴犬</li>
+      <li>Shiba Inu</li>
+      <li>しば いぬ</li>
+    </ul>    
+    
+    <hr/>
+    
+    <h1>Exercise4. add to list items "hoverable" style</h1>
+    <ul class="d">
+      <li>A "white" (also called "cream") Shiba Inu</li>
+      <li>Sesame Shiba Inu</li>
+      <li>Black and tan Shiba Inu with urajiro</li>
+    </ul>
+    <ul class="d">
+      <li>Red</li>
+      <li>sesame</li>
+      <li>cream</li>
+      <li>black and tan</li>
+    </ul>
+    
+    <hr/>
+    
+    <h1>Exercise5. add borders to table</h1>  
+    <table class="e">
+      <tr class="e">
+        <th class="e">English</th>
+        <th class="e">Japanese</th>
+      </tr>
+      <tr class="e">
+        <td class="e">Shiba Inu</td>
+        <td class="e">しば いぬ</td>
+      </tr>
+    </table>
+      
+      <hr/>
+ 
+      <h1>Exercise6. use only vertical lines in table borders</h1>  
+      <table class="f">
+        <tr class="f">
+          <th class="f">Hiragana</th>
+          <th class="f">Kanji</th>
+        </tr>
+        <tr class="f">
+          <td class="f">しば いぬ</td>
+          <td class="f">柴犬</td>
+        </tr>
+      </table>
+
+      <hr/>
+    
+      <h1>Exercise7. add padding to the table</h1> 
+      <table class="g">
+        <tr class="g">
+          <th class="g">Color 1</th>
+          <th class="g">Color 2</th>
+        </tr>
+        <tr class="g">
+          <td class="g">Cream</td>
+          <td class="g">White</td>
+        </tr>
+      </table> 
+    
+      <hr/>
+    
+      <h1>Exercise8. add colors to a table</h1> 
+       <table class="h">
+        <tr class="h">
+          <th class="h">Color 3</th>
+          <th class="h">Color 4</th>
+        </tr>
+        <tr class="h">
+          <td class="h">Red</td>
+          <td class="h">Sesame</td>
+        </tr>
+      </table>
+
+      <hr/>
+     
+      <h1>Exercise9. use table color striping (example 18)</h1> 
+       <table class="i">
+        <tr class="i">
+          <th class="i">Color 5</th>
+          <th class="i">Color 6</th>
+        </tr>
+        <tr class="i">
+          <td class="i">Black</td>
+          <td class="i">Tan</td>
+        </tr>
+      </table>
+    
+      <hr/>
+    
+      <h1>Exercise10. use "hoverable" style on a table</h1> 
+        <table class="j">
+        <tr class="j">
+          <th class="j">Weight</th>
+          <th class="j">Height</th>
+          <th class="j">Gender</th>
+        </tr>
+        <tr class="j">
+          <td class="j">10 kg (22 lb)</td>
+          <td class="j">35 to 43 cm (14 to 17 in)</td>
+          <td class="j">Female</td>
+        </tr>
+        <tr class="j">
+          <td class="j">8 kg (18 lb)
+</td>
+          <td class="j">33 to 41 cm (13 to 16 in)</td>
+          <td class="j">Male</td>
+        </tr>
+       </table>
+    
+      <hr/>  
+    
+      <h1>Exercise11. add borders spacing to a table</h1> 
+       <table class="k" border="1">
+          <tr class="k">
+            <td class="k">Shiba</td>
+            <td class="k">Inu</td>
+          </tr>
+          <tr class="k">
+           <td class="k">Dog</td>
+           <td class="k"></td>
+          </tr>
+       </table>
+  </body>
+</html>
